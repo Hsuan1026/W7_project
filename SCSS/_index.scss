@@ -1,0 +1,129 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.banner{
+    z-index: 2;
+    img{
+        @include mobile(){
+            height: 480px;
+        }
+    }
+    .banner_content{
+        width: 445px;
+        top: 20%;
+        right: 10%;
+        @include mobile(){
+            width: 345px;
+            top: 15%;
+            right: 4%;
+        }
+        a{
+            padding: 10px 100px;
+            font-size: $text_L;
+        }
+        .btn-outline-light{
+            border-radius: 50px;
+        }
+    }
+    h2{
+        font-size: $text_XL;
+        line-height: 1.5;
+        font-family: $text;
+    }
+    p{
+        font-size: $text_L;
+        line-height: 1.5;
+        font-family: $text;
+    }
+}
+.footer-image{
+    h2{
+        font-family: $textC;
+    }
+    img{
+        @include mobile(){
+            height: 600px;
+        }
+    }
+    .footer-image_content{
+        top: 50%;
+        left: 15%;
+        @include mobile(){
+            left: 5%;
+        }
+    }
+    form{
+        input{
+            width: 210px;
+        }
+        .form-control{
+            border-radius: 0;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        .btn{
+            border-radius: 0;
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+        }
+    }
+}
+.index_introduction{
+    h2{
+        font-size: 32px;
+        line-height: 1.5;
+        font-family: $text;
+    }
+    p{
+        font-size:$text_M;
+        line-height: 1.5;
+        font-family: $text;
+    }
+    a{
+        display: block;
+        font-size:$text_S;
+        line-height: 1.5;
+        font-family: $text;
+    }
+    ul{
+        h3{
+            font-size: $text_L;
+            line-height: 1.5;
+            font-family: $text;
+        }
+        p{
+            font-size: $text_S;
+            line-height: 1.5;
+            font-family: $text;
+        }
+        .btn-outline-dark{
+            width: 350px;
+            border-radius: 50px;
+            border:2px solid black;
+        }
+        a{
+            font-size:$text_M;
+        }
+    }
+}
+.index_product{
+    a{
+        font-size: $text_L;
+        line-height: 1.5;
+    }
+    .opacity70{
+        opacity:0.7;
+    }
+    .sold-out{
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
+        font-size: $text_L;
+        line-height: 1.5;
+        font-family: $text;
+    }
+}

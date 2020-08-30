@@ -1,0 +1,42 @@
+.member_data_content{
+    h1{
+        font-size:$text_M;
+        line-height:1.5;
+        font-family: $textC;
+    }
+    ul{
+        a{
+            font-size:$text_S;
+            line-height:1.5;
+            font-family: $textC;
+            color: #848484;
+        }
+        a:hover{
+            color: #916000;
+        }
+    }
+    h2{
+        font-size:$text_S;
+        line-height:1.5;
+        font-family: $textC;
+    }
+    .text14{
+        font-size:14px;
+        line-height:1.5;
+        font-family: $textC;
+    }
+    form{
+        label{
+            height: 22px;
+            font-family: $textC;
+        }
+    }
+    .text_smaller{
+        @include mobile(){
+        font-size:15px;
+        }
+    }
+    button{
+        line-height: 22px;
+    }
+}

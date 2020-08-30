@@ -1,0 +1,10 @@
+@mixin hide_text{
+    text-indent: 101%;
+    overflow: hidden;
+    word-spacing: nowrap;
+}
+@mixin mobile{
+    @media(max-width:768px){
+        @content;
+    }
+}

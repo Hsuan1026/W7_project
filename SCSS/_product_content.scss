@@ -1,0 +1,39 @@
+.product_introduction{
+    .btmimg{
+        @include mobile(){
+            height: 460px;
+        }
+    }
+    h1{
+        font-size:32px;
+        line-height:1.5;
+    }
+    .text16{
+        font-size:$text_S;
+        line-height:1.5;
+        font-family: $textC;
+    }
+    .text20{
+        font-size:$text_M;
+        line-height:1.5;
+        font-family: $textC;
+    }
+    .form-control{
+        font-size:1.5rem
+    }
+    span{
+        font-size:$text_S;
+        line-height:1.125;
+        font-family: $textC;
+    }
+    .form-control{
+        border-radius: 0;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+    .btn{
+        border-radius: 0;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+}

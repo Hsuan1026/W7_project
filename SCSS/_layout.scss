@@ -1,0 +1,59 @@
+.header{
+    .header_logo{
+        display: block;
+        width: 128px;
+        height: 38px;
+        background-image: url("../images/d’Perfume.png");
+        @include hide_text;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    ul{
+        span{
+            font-size: $text_M;
+            line-height: 1.2;
+            font-family: $text;
+        }
+    }
+    .bar-list{
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        max-height: 0px;
+        a{
+            font-size: $text_M;
+            line-height: 1.2;
+            font-family: $text;
+        }
+        a:hover{
+            background-color:#916000;
+        }
+    }
+    .active{
+        max-height: 300px;
+    }
+}
+.footer{
+    .footer_logo{
+        display: block;
+        width: 128px;
+        height: 38px;
+        background-image: url("../images/d’Perfumew.png");
+        @include hide_text;
+        margin-top: 20px;
+    }
+    span{
+        font-size:$text_XS;
+        line-height:1.2;
+        font-family: $text;
+    }
+    li{
+        a{
+            font-size:$text_M;
+            line-height:1.2;
+            font-family: $text;
+        }
+    }
+}
